@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+h1 {
+ font-size: 25px;
+ line-height: 30px;
+ font: "orbitron-bold";
+}
+h2 {
+  font-size: 10px;
+}
+a {
+ text-decoration: none;
+ color: #2dc4b2;
+}
+h3 {
+ font-size: 15px;
+ line-height: 20px;
+ margin-bottom: 10px;
+}
+#console {
+ position: absolute;
+ width: 300px;
+ margin: 10px;
+ padding: 10px 20px;
+ background-color: white;
+ opacity: 0.8;
+ font-family: "Orbitron", sans-serif;
+}
+.session {
+ margin-bottom: 10px;
+}
+.row {
+  9
+ height: 20px;
+ width: 100%;
+}
+
+#menu {
+  position: absolute;
+  background: solid blue;
+  padding: 10px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.mapboxgl-popup {
+max-width: 400px;
+font: 10px/18px; 
+font-family: "Orbitron", sans-serif;
+opacity: 0.8;
+}
+
+#features {
+  top: 0;
+  height: 145px;
+  margin-top: 20px;
+  width: 300px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  /*border: 5px #b10026;*/
+  background-color: inherit;
+  cursor: pointer;
+  display: block;
+  height: 20px;
+  width: 300px;
+  text-align: center;
+  line-height: 20px;
+}
+input[type="radio"]:checked + label[for^= "all"] {
+  border: 3px solid blue;
+  background-color: #800026;
+}
+input[type="radio"]:checked + label[for^= "USA"] {
+  border: 3px solid blue;
+  background-color: #b10026;
+}
+input[type="radio"]:checked + label[for^= "USSR"] {
+  border: 3px solid blue;
+  background-color: #fc4e2a;
+}
+input[type="radio"]:checked + label[for^= "France"] {
+  border: 3px solid blue;
+  background-color: #fd8d3c;
+}
+input[type="radio"]:checked + label[for^= "UK"] {
+  border: 3px solid blue;
+  background-color: #feb24c;
+}
+input[type="radio"]:checked + label[for^= "PRC"] {
+  border: 3px solid blue;
+  background-color: #fed976;
+}
+input[type="radio"]:checked + label[for^= "DPRK"] {
+  border: 3px solid blue;
+  background-color: #ffeda0;
+}
+input[type="radio"]:checked + label[for^= "Pak"] {
+  border: 3px solid blue;
+  background-color: #ffffcc;
+}
+input[type="radio"]:checked + label[for^= "India"] {
+  border: 3px solid blue;
+  background-color: #ffffff;
+}
+input[type="range"]{
+  accent-color: #800026
+}

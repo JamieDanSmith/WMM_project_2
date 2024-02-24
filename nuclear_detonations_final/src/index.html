@@ -1,0 +1,68 @@
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Toggle layers</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <!-- Mapbox JS API !-->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+  <!-- Mapbox CSS!-->
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Orbitron" />
+</head>
+
+<body>
+  <div id='map'></div>
+  <div id='console'>
+    <h1>The Nuclear Age: Detonations throughout History</h1>
+    <h2>
+      <p>Data sourced from <a href='https://www.arcgis.com/home/item.html?id=e4d37e29e46f40acba0b1dc719aa99cd'>ArcGIS Feature Service </a>, produced by user <a href="https://www.arcgis.com/home/user.html?user=damian"> 'damian' </a> </p>
+      <p> Click on a point for more information and relevant links where available</p>
+      <p>Enter fullscreen for best experience</p>
+    </h2>
+
+    <!–– Slider––>
+      <div class='session' id='sliderbar'>
+        <h3>Year: <label id='active-year'>1945</label></h3>
+        <input id='slider' class='row' type='range' min='1945' max='2011' step='1' value='1945' />
+      </div>
+
+      <!–– Radio buttons––>
+        <div class='session'>
+          <h3>Country</h3>
+          <div class='row' id='filters'>
+
+            <input id='all' type='radio' name='toggle' value='all' checked='checked'>
+            <label for='all'>All</label>
+
+            <input id='USA' type='radio' name='toggle' value='USA'>
+            <label for='USA'>USA</label>
+
+            <input id='USSR' type='radio' name='toggle' value='USSR'>
+            <label for='USSR'>USSR/Russia</label>
+
+            <input id='France' type='radio' name='toggle' value='France'>
+            <label for='France'>France</label>
+
+            <input id='UK' type='radio' name='toggle' value='UK'>
+            <label for='UK'>UK</label>
+
+            <input id='PRC' type='radio' name='toggle' value='PRC'>
+            <label for='PRC'>PRC</label>
+
+            <input id='DPRK' type='radio' name='toggle' value='DPRK'>
+            <label for='DPRK'>DPRK</label>
+
+            <input id='Pak' type='radio' name='toggle' value='Pak'>
+            <label for='Pak'>Pakistan</label>
+
+            <input id='India' type='radio' name='toggle' value='India'>
+            <label for='India'>India</label>
+
+          </div>
+        </div>
+  </div>
+  </div>
+</body>
+
+</html>
